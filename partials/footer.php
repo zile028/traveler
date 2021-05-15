@@ -2,9 +2,10 @@
     <article class="container">
         <div>
             <h3>O nama</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde voluptates assumenda et, officiis vero
-                error ut, possimus laudantium quas odit eius voluptate tempore, deserunt laborum! Suscipit
-                consectetur ipsum hic ad.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorum perferendis dolore! Quae magni
+                dolores voluptatibus eius officia, doloribus magnam, accusamus nam doloremque, laborum maxime voluptate
+                natus fugit deleniti quod officiis nulla praesentium illum atque facilis culpa animi possimus! Tenetur!
+            </p>
         </div>
         <div>
             <h3>Top lokacije</h3>
@@ -19,8 +20,10 @@
         <div>
             <h3>Novosti</h3>
             <p>Popust na rane prijave</p>
-            <input type="email" placeholder="Email">
-            <input type="submit" value="Posalji">
+            <form>
+                <input type="email" placeholder="Email">
+                <input class="btn" type="submit" value="Posalji">
+            </form>
         </div>
     </article>
 </footer>

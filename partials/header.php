@@ -28,7 +28,13 @@
     <nav class="container">
         <a href="index.php" class="logo">putovanja.com</a>
         <ul>
-            <li><a href="index.php">Naslovna</a></li>
+            <li><a href="index.php">home</a></li>
             <li><a href="ponuda.php">Ponuda</a></li>
         </ul>
     </nav>
+    <div class="social">
+        <a href=""><i class="fab fa-facebook-square"></i></a>
+        <a href=""><i class="fab fa-youtube-square"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-pinterest"></i></a>
+    </div>
