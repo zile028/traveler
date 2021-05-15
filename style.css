@@ -88,6 +88,7 @@ img {
   transform: translateY(-50%);
   background: var(--white);
   padding: 5px;
+  z-index: 10;
 }
 .social a {
   font-size: 2rem;
@@ -115,6 +116,7 @@ img {
 .topbar article {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .topbar {
   background: var(--darkGray);
@@ -156,11 +158,16 @@ nav .logo:hover {
   text-shadow: 1px 1px 0 var(--accents);
   color: var(--darkGray);
 }
+nav ul li {
+  margin-left: 50px;
+}
 nav ul li a {
   color: var(--darkGray);
   text-transform: uppercase;
   font-weight: 700;
-  margin-left: 50px;
+}
+nav ul li:first-child {
+  margin-left: 0;
 }
 nav ul li a:hover {
   color: var(--accents);
@@ -177,6 +184,7 @@ footer {
 footer article {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 footer h3 {
   color: var(--accents);
@@ -331,8 +339,6 @@ footer input[type="submit"]:hover {
 /**************************** 
 ----package
 *****************************/
-.package {
-}
 .package section:last-child {
   display: flex;
   justify-content: space-between;
@@ -367,4 +373,76 @@ footer input[type="submit"]:hover {
 .package p {
   margin-top: 20px;
   line-height: 1.5;
+}
+
+/**************************** 
+----RESPONSIVE
+*****************************/
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  .py {
+    padding: 30px 0;
+  }
+  .topbar article p {
+    flex: 0 0 50%;
+  }
+  .topbar article p:first-child {
+    line-height: 1.5;
+  }
+  .topbar article p:last-child {
+    text-align: right;
+  }
+  .ponudaHeader h1,
+  .indexHeader article h1 {
+    font-size: 3rem;
+  }
+  .ponudaHeader h5,
+  .indexHeader article h5 {
+    font-size: 1.5rem;
+  }
+  .title h2 {
+    font-size: 2.5rem;
+  }
+  .title p {
+    padding: 5px 15px;
+  }
+  .destination .wrapper {
+    flex: 0 0 100%;
+    margin-bottom: 30px;
+  }
+  footer {
+    padding: 30px 0;
+  }
+  footer div:nth-child(1),
+  footer div:nth-child(2),
+  footer div:nth-child(3) {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+  footer div:nth-child(3) {
+    margin-bottom: 0;
+  }
+  footer form input,
+  footer form input[type="submit"] {
+    padding: 1em 1em;
+    width: 100%;
+  }
+  footer form input[type="submit"] {
+    margin-top: 5px;
+  }
+
+  .package article {
+    flex: 0 0 100%;
+    max-height: unset;
+  }
+  .package article div {
+    flex: 0 0 100%;
+    height: auto;
+  }
+  .package article div:nth-child(2) {
+    order: -1;
+  }
 }
